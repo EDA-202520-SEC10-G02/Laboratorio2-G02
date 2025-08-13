@@ -38,8 +38,7 @@ The students edit this section to add their names, Uniandes emails, and specify 
 
 1. Student No. 1, Sebastian Pamplona Vargas, <s.pamplona@uniandes.edu.co>.
 1. Student No. 2 Juan Manuel Forero Bohorquez, <jm.forerob1@uniandes.edu.co> .
-1. Student No. 3 Name, Student No. 3 Uniandes Email, Student No. 3 owned functionality.
-
+1. Student No. 3 Santiago Alvear Garzón, <s.alvear@uniandes.edu.co>
 [Back to top](#sample-conflicts)
 
 <!-- ABOUT THE PROJECT -->

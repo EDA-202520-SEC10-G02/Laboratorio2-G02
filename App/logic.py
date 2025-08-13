@@ -119,7 +119,7 @@ def load_tags(catalog, filename):
     return tag_size(catalog)
 
 
-def load_books_tags(catalog, filename):
+def load_books_tags(control, filename):
     """
     Carga los tags de los libros del archivo y los agrega a la lista
     de tags. Siga el mismo procedimiento que en la carga de libros.
@@ -133,7 +133,10 @@ def load_books_tags(catalog, filename):
     :rtype: int
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    catalog = control["model"]
+    booksfile = os.path.join(data_dir, filename)
+    catalog = model.add_book_tags_file(catalog, booksfile)
+    return model.book_tag_size(catalog)
 
 
 def first_book(catalog):
@@ -167,7 +170,8 @@ def add_book_tags_file(catalog, booktagsfile):
     :rtype: dict
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    catalog["book_tags"] = set.new_set()
+    return catalog
 
 
 def create_book_tag_list(catalog):

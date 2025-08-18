@@ -151,7 +151,7 @@ def main():
             print("Último libro cargado:\n" + str(last) + "\n") 
 
         elif int(inputs[0]) == 2:
-            print("Cargando información de tags....")
+            print("Cargando informacion de tags....")
             tags = load_tags(app)
             print("Total de tags cargados: " + str(tags) + "\n")
 

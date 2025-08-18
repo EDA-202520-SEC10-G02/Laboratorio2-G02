@@ -116,7 +116,8 @@ def last_book(app):
     """
     Devuelve el último libro cargado en el conjunto de libros
     """
-    pass
+    last = logic.last_book(app)
+    return last
 
 
 # Se crea el controlador asociado a la vista
@@ -146,7 +147,8 @@ def main():
             print("Primer libro cargado: " + str(first) + "\n")
 
             # TODO: Mods de Est-2 en el Lab 2
-            last = None
+            last = last_book(app)
+            print("Último libro cargado:\n" + str(last) + "\n") 
 
         elif int(inputs[0]) == 2:
             print("Cargando información de tags....")
